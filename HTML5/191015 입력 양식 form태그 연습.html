@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>form태그 연습 - 겨울방학 특강 신청서 만들기</title>
+  </head>
+  <body>
+    <h1>2019년 2학기 겨울방학 특강 신청</h1>
+    <form>
+      <fieldset>
+        <legend>수강과목</legend>
+        <label for="subj">HTML5 실습</label><br>
+        <input type="text" value="오전 9:00~11:00" id="subj" readonly>
+        <!--readonly 사용자가 입력 불가, 읽기 전용-->
+      </fieldset>
+      <fieldset>
+        <legend>신청자</legend>
+        <label for="name">이름</label>
+        <input type="text" placeholder="공백 없이 입력하세요" id="name" required autofocus><br>
+        <!--placeholder 색, 글자 모양 꾸미기. 기본 모양은 회색 글자-->
+        <!--required  필수 유효성 확인-->
+        <!--autofocus 페이지가 로드될 때 자동으로  초점이 이동됨-->
+        <label for="num">학번</label><br>
+        <input type="text" placeholder="7가지 숫자만 입력" maxlength="7" id="num" required><br>
+        <!--maxlength 최대 입력 가능 길이-->
+        <label for="major">학과</label>
+        <select id="major"><!--여러 항목 선택-->
+          <option value="com">컴퓨터프로그래밍 전공</option>
+          <option value="com">웹데이터베이스 전공</option>
+          <option value="com">스마트게임콘텐츠 전공</option>
+          <option value="com">네트워크/보안 및 IoT 전공</option>
+        </select>
+        <br>
+        <label for="phone">연락처</label>
+        <select id="phone">
+          <option selected>010</option>
+          <option>02</option>
+          <option>053</option>
+          <option>051</option>
+          <option>052</option>
+          <option >054</option>
+        </select>
+        <input type="tel" maxlength="4" required>
+        <input type="tel" maxlength="4" required>
+      </fieldset>
+      <fieldset>
+        <legend>교재 주문</legend>
+        <label for="book">교재</label>
+        <input type="range" id="book" value="1" min="1" max="10"><br>
+        <!--min 최소 입력 길이, max 최대 입력 길이-->
+        <label for="ws">HTML5 / CSS / Java Script </label>
+        <input type="number" value="1" id="ws" min="0" max="10"><br>
+        <label for="order">단체주문</label>
+        <input type="number" value="10" id="order" min="10" max="50" step="10"><br>
+        <!--step 10단위로 카운트-->
+        <label for="kind">관심분야 -  네트워크, 프로그래밍, 데이터베이스, IoT</label>
+        <input type="text" id="kind" list="interest">
+        <datalist id="interest">
+          <option value="Network" label="네트워크">네트워크, </option>
+          <option value="Programming" label="프로그래밍">프로그래밍, </option>
+          <option value="Database" label="데이터베이스">데이터베이스, </option>
+          <option value="IoT" label="IoT">IoT, </option>
+        </datalist>
+      </fieldset>
+      <fieldset>
+        <legend>신청과 재입력</legend>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+      </fieldset>
+    </form>
+  </body>
+</html>
