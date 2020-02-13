@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 Selector 자손, 후손</title>
+    <style>
+      /* id속성으로 header를 가지는 태그의 후손 위치에 있는 h1태그의 color 속성을 red 키워드로 (! 선택자A 선택자B의 형태를 취하고있다.)*/
+      #header h1 {
+        color : red ;
+        }
+      /* id속성으로 section을 가지는 태그의 후손 위치에 있는 h1태그의 color 속성을 orange 키워드로 (!선택자A 선택자B의 형태를 취하고있다.) */
+      #section h1 {
+        color : orange;
+        }
+      </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>영진전문대학교</h1> <!--header의 후손. 스타일 적용o-->
+      <div>
+        <h1>Navigation</h1> <!--header의 후손. 스타일 적용o-->
+      </div>
+    </div>
+    <div id="section">
+      <h1>영진전문대학교</h1> <!--section의 후손. 스타일 적용o-->
+      <p>컴퓨터정보계열</p> <!--후손x 스타일 적용x-->
+    </div>
+  </body>
+</html>
