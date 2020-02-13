@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>Daum 홈페이지 상단</title>
+    <style>
+      * {
+        padding:0;
+        margin:0;
+      }
+      li {
+        list-style-type:none;
+      }
+      #head {
+        background-color:#f6f5ef;
+      }
+      #logo {
+        float:left;
+        margin:20px 0 10px 30px;
+      }
+      #top {
+        float:right;
+        margin:30px 2   0px 0 0;
+      }
+      #menu {
+        clear:both;
+        height:50px;
+        background-color:white;
+        color:black;
+        text-align:center;
+        padding-left:45px;
+        font-size:15px;
+      }
+      #menu li {
+        display:inline;
+      }
+      .item {
+        float:left;
+        margin:10px;
+        font-weight:bold;
+      }
+      li:hover { /*반응 선택자: 마우스 커서를 위에 올렸을 때*/
+        color:orange;
+      }
+      li:active { /*반응 선택자: 클릭 했을 때*/
+        color:blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="head">
+      <div id="logo"><img src="C:/1-B HTML5/img/d_logo1.png"></div>
+      <div id="logo"><br><img src="C:/1-B HTML5/img/d_search.png"></div>
+    </div>
+    <ul id="menu">
+      <li class="item">카페</li>
+      <li class="item">메일</li>
+      <li class="item">뉴스</li>
+      <li class="item">지도</li>
+      <li class="item">증권</li>
+      <li class="item">쇼핑</li>
+      <li class="item">카카오TV</li>
+      <li class="item">웹툰</li>
+      <li class="item">블로그</li>
+      <li class="item">브런치</li>
+      <li class="item">사전</li>
+      <li class="item">게임</li>
+      <li class="item">같이가치</li>
+      <li class="item">더보기</li>
+      <span><b>10. 30 (수) 경상북도</b></span>
+      </div>
+    </ul>
+    <hr>
+  </body>
+</html>
