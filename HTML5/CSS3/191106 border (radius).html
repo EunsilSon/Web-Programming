@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>border radius(1)</title>
+    <style>
+      div.r1{
+        border-radius:10px;
+        border:3px solid red;
+        border-top-left-radius:10px; /*둥근 모서리의 테두리*/
+        border-top-right-radius:10px;
+      }
+      div.r2{
+        border-radius:10px;
+        border:3px solid;
+        border-top-left-radius:30px;
+        border-top-right-radius:30px;
+      }
+      .brd1{
+        width:100px;
+        height:100px;
+        padding:20px;
+        border:3px solid red;
+        border-top-left-radius:100px 50px;
+      }
+      .brd2{
+        width:100px;
+        height:100px;
+        padding:20px;
+        border:3px solid red;
+        border-bottom-right-radius:50% 30%;
+      }
+      .brd3{
+        width:100px;
+        height:100px;
+        padding:20px;
+        border:3px solid red;
+        border-top-right-radius:50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "r1">아메리카노</div>
+    <p></p>
+    <div class = "r2">카페라떼</div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="brd1"></div>
+    <p></p>
+    <div class="brd2"></div>
+    <p></p>
+    <div class="brd3"></div>
+    <p></p>
+  </body>
+</html>
