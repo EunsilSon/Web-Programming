@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>상대 좌표</title>
+    <style>
+      .container{   /*class선택자*/
+        width:200px;
+        height:200px;
+        margin:0 auto; /*auto 중간에 위치*/
+        border:3px solid black;
+      }
+      .box1{  /*class선택자*/
+        width:100px;
+        height:100px;
+        background-color:red;
+        position:relative; /*원래 배치되어야 할 위치에서 지정한 값만큼 떨어진곳에 요소 배치*/
+        top:0;
+        left:0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+      </div>
+    </div>
+  </body>
+</html>
