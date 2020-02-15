@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS로 사진에 테두리 넣기</title>
+    <style>
+      body{
+        background:darkgray;
+      }
+      ul{
+        list-style:none;
+      }
+      ul li{
+        float:left;
+        margin:30px 20px 10px 10px;
+      }
+      #border1 {
+        width:350px;
+        height:250px;
+        border:10px solid white;
+        margin-top:10px;
+        border-radius:10%;
+        box-shadow:3px 3px 5px black;
+      }
+      #border2 {
+        width:350px;
+        height:250px;
+        border:10px solid white;
+        margin-top:10px;
+        border-radius:30%;
+        box-shadow:3px 3px 5px black;
+      }
+      #border3 {
+        width:350px;
+        height:250px;
+        border:15px solid white;
+        margin-top:10px;
+        border-radius:50%;
+        box-shadow:3px 3px 5px black;
+      }
+    </style>
+  </head>
+  <body>
+    <li><img src="logo2.png" id="border1"></li>
+    <li><img src="logo2.png" id="border2"></li>
+    <li><img src="logo2.png" id="border3"></li>
+  </body>
+</html>
