@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>box model-margin</title>
+    <!--margin 속성: 요소 주변 여백 설정
+          margin-top, margin-right, margin-bottom, margin-left
+          위, 오른쪽, 아래, 왼쪽
+
+        p {margin:1opx 5px 10px} = p {margin:10px 5px 10px 5px}
+        p {margin:10px 5px}        = p {margin:10px 5px 10px 5px}
+        p {margin:10px}              = p {margin:10px 10px 10px 10px}
+      -->
+    <style>
+      #size1{
+        margin-top:30px;
+        margin-right:50px;
+        margin-bottom:30px;
+        margin-left:50px;
+      }
+      #size2{
+        margin:30px 50px 30px 50px;
+      }
+      #size3{
+        margin:30px 50px;
+      }
+      #size4{
+        margin:50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>아메리카노</h3>
+    <p id="size1">에스프레소의 향은 그대로 느끼면서 뜨거운 물을 부어 1:2 정도의 비율로 연하게 마시는 커피다.</p>
+    <p id="size2">에스프레소의 향은 그대로 느끼면서 뜨거운 물을 부어 1:2 정도의 비율로 연하게 마시는 커피다.</p>
+    <p id="size3">에스프레소의 향은 그대로 느끼면서 뜨거운 물을 부어 1:2 정도의 비율로 연하게 마시는 커피다.</p>
+    <p id="size4">에스프레소의 향은 그대로 느끼면서 뜨거운 물을 부어 1:2 정도의 비율로 연하게 마시는 커피다.</p>
+  </body>
+</html>
