@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>절대 좌표(1)</title>
+    <style>
+      .container{  /*class선택자*/
+        width:200px;
+        height:200px;
+        margin:0 auto; /*auto 중간에 위치*/
+        border:3px solid black;
+      }
+      .box1{  /*class선택자*/
+        width:100px;
+        height:100px;
+        background-color:red;
+        position:absolute; /*가장 가까운 상위 요소의 위치를 기준으로 지정한 값만큼 떨어진 곳에 요소 배치*/
+        top:10;
+        left:100;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+      </div>
+    </div>
+  </body>
+</html>
