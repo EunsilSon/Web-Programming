@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>border shadow</title>
+    <style>
+      .brd1{
+        width:100px;
+        height:100px;
+        padding:20px;
+        border:3px solid red;
+        border-top-left-radius:100px 50px;
+        box-shadow:10px 10px 5px 5px #666;
+      }
+      .brd2{
+        width:100px;
+        height:100px;
+        padding:20px;
+        border:3px solid red;
+        border-top-left-radius:30%;
+        box-shadow:10px 10px 5px -1px black inset; /*inset: border의 내부에 설정*/
+      }
+      .brd3{
+        width:100px;
+        height:100px;
+        padding:20px;
+        border:3px solid red;
+        border-top-left-radius:50px;
+        box-shadow:10px 10px 5px -5px inset;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="brd1"></div>
+    <p></p>
+    <div class="brd2"></div>
+    <p></p>
+    <div class="brd3"></div>
+    <p></p>
+  </body>
+</html>
