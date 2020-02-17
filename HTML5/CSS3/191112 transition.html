@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>애니메이션 반응 속도 조절 transition</title>
+    <style>
+      #one{
+        width:100px;
+        height:50px;
+        background-color:gray;
+        transition: 2s;
+      }
+      #one:hover{
+        width:200px;
+      }
+      #two{
+        width:100px;
+        height:50px;
+        background-color:gray;
+        transition: 2s;
+      }
+      #two:hover{
+        width:200px;
+        background-color:red;
+      }
+      #three{
+        width:100px;
+        height:50pc;
+        background-color:gray;
+        transition: 2s ease-in;
+      }
+      #three:hover{
+        width:200px;
+      }
+      #four{
+        width:100px;
+        height:50px;
+        background-color:gray;
+        font-size:14px;
+        transition: 2s, 5s, ease-in;
+      }
+      #four:hover{
+        width:200px;
+        height:200px;
+        font-size:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="one"></div>
+    <br>
+    <div id="two"></div>
+    <br>
+    <div id="three"></div>
+    <br>
+    <div id="four">font size 14에서 20</div>
+  </body>
+</html>
