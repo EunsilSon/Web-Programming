@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>가을여행 (인트로)</title>
+  <style>
+   section > div {width: auto; height: 370px; font: bold 30px/300px "Helvetica"; background: black; color: black; text-align: center;}
+   @-webkit-keyframes myani {
+    from {color: rgba(0, 0, 0, 0); text-shadow: 0 -15px 30px rgba(255, 255, 255, 0);}
+    50% {color: rgba(0, 0, 0, 1); text-shadow: 0 0px 5px rgba(255, 255, 0, 1);}
+    to {color: rgba(0, 0, 0, 0); text-shadow: 0 15px 30px rgba(255, 255, 255, 0);}
+   }
+   .ani{
+     -webkit-animation-name: myani;  /*@keyframes로 생성된 애니메이션 이름*/
+     -webkit-animation-delay: 1s;  /*애니메이션 실행 전 지연 시간*/
+     -webkit-animation-duration: 4s;  /*애니메이션 1회의 실행 시간*/
+     -webkit-animation-iteration-count: infinite;  /*애니메이션 무한 반복*/
+     -webkit-animation-timing-function: ease;  /*애니메이션 속도: 중간은 빠르고 시작, 끝 부분 느리게 */
+     -webkit-animation-direction: alternate;  /*애니메이션 반복 형태: 1회 재생 완료 시 역방향 재생*/
+   }
+   footer p {padding:20px;}
+   footer{clear:both;width: 830px;margin-bottom:0;background-color:#333;color:white;text-align:center;}
+  </style>
+ </head>
+ <body>
+  <div id="container">
+   <header>
+    <h1>가을에 가기좋은 여행지 !!!!</h1>
+   </header>
+   <section>
+    <div class="ani">
+           ~~~ 깊어가는 가을 여행을 떠나요 ~~~
+    </div>
+   </section>
+  </div>
+  <footer>
+     <p>Copyright 2019 가을이오면 떠나요~~~    by 영진전문대학교 컴퓨터정보계열 정효원</p>
+   </footer>
+ </body>
+</html>
