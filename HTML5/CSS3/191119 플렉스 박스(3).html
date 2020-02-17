@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>플렉스 박스(3)</title>
+  </head>
+  <style>
+    #container{
+      width:300px;
+      height:300px;
+      margin:0 auto;
+      display:flex;
+      -ms-flex-wrap:wrap; /*익스플로러 브라우저*/
+      -webkit-flex-wrap:wrap; /*구글, 사파리 브라우저*/
+      flex-wrap:wrap; /*플렉스 항목들의 크기는 변하지 않고 다음 행으로 개행*/
+      border:2px solid black;
+    }
+    #container div{
+      width:200px;
+      border:2px solid black;
+      background:#ccc;
+    }
+    h2{
+      font-size:20px;
+      font-weight:bold;
+      padding:20px;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div><h2>1</h2></div>
+      <div><h2>2</h2></div>
+      <div><h2>3</h2></div>
+    </div>
+  </body>
+</html>

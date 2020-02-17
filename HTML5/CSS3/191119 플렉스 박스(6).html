@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>플렉스 박스(6)</title>
+  </head>
+  <style>
+    #container{
+      width:500px;
+      height:100px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      border:2px solid black;
+    }
+    #container div{
+      width:100px;
+      height:50px;
+      border:2px solid black;
+      background:#ccc;
+    }
+    #box1{
+      -ms-flex: 1 1 0;
+      -webkit-flex: 1 1 0;
+      flex: 1 1 0;
+    }
+    #box2{
+      -ms-flex: 2 2 0;
+      -webkit-flex: 2 2 0;
+      flex: 2 2 0; /*2배 늘이거나 2배 줄임*/
+    }
+    p{
+      font-weight:bold;
+      text-align:center;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div id="box1"><h2>1</h2></div>
+      <div id="box2"><h2>2</h2></div>
+      <div><p>3</p></div>
+    </div>
+  </body>
+</html>
