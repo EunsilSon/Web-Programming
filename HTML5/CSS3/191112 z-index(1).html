@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>배치 순서 조절 속성 z-index(1)</title>
+    <style>
+      #cont1{
+        position:absolute;
+        left:100px;
+        top:100px;
+        background:#ff6600;
+        z-index:1; /*첫 번째*/
+      }
+      #cont2{
+        position:absolute;
+        left:120px;
+        top:120px;
+        background:#00b000;
+        z-index:2; /*두 번째*/
+      }
+      #cont3{
+        position:absolute;
+        left:140px;
+        top:140px;
+        background:#0000ff;
+        z-index:3 /*세 번째*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cont1"><h1>AAAAA</h1></div>
+    <div id="cont2"><h1>BBBBB</h1></div>
+    <div id="cont3"><h1>CCCCC</h1></div>
+  </body>
+</html>
