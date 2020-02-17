@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Media Query</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--뷰포트 제어 가능-->
+    <style>
+      body{
+        background-color:darkorange;
+      }
+      @media screen and (min-width:768px){ /*웹 브라우저의 가로 너비가 768px이거나 이상일 때*/
+        body{
+          background-color:lightblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>미디어 쿼리를 이용한 뷰포트 별 배경 색 설정</h1>
+    <p>뷰포트의 너비가 768px이거나 그 이하일 경우 배경색을 dark orange로 표현해준다.
+      <br>하지만 뷰포트의 너비가 그 초과이일 경우에는 배경색을 light blue로 바꿔서 표현해준다.</p>
+      <p>웹 브라우저의 크기를 줄여서 확인해보자.</p>
+  </body>
+</html>
