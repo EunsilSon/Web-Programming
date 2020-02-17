@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>배치 순서 조절 속성 z-index(2)</title>
+    <style type="text/css">
+      html, body, h1, p, a{
+        padding:0;
+        margin:0;
+        line-height:1;
+      }
+      img {
+        border:0;
+      }
+      div.imgTopic{
+        position:relative;
+        width:300px;
+        height:200px;
+        font-family:"Dotum","돋움",sans-serif; /*sans-serif: 고딕체 계열*/
+        border:1px solid #eee
+      }
+      div.imgTopic a {
+        text-decoration:none;
+      }
+      h1.title {
+        position:absolute;
+        z-index:1;
+        left:5px;
+        bottom:30px;
+      }
+      h1.title a{
+        font-size:18px;
+        font-weight:bold;
+        color:#fff;
+      }
+      h1.title a:hover, h1.title a:focus {
+        text-decoration:underline;
+      }
+      p.content a {
+        font-size:11px;
+        color:#ccc;
+      }
+      span.date{
+        position:absolute;
+        display:block;
+        left:0;
+        bottom:0;
+        width:295px;
+        height:25px;
+        padding:35px 0 0 5px;
+        background:url("C:\1-B HTML5\img\photographer.jpg") repeat;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="imgTopic">
+      <h1 class="title"><a href="#">큰 제목</a></h1>
+      <p class="content"><a href="#"><img src="C:\1-B HTML5\img\photographer.jpg" alt=""/><span class="date">2019년 11월 09일 오후 3:00</span></a></p>
+    </div>
+  </body>
+</html>
