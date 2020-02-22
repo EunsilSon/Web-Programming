@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML 태그 선택자(2)</title>
+    <script type="text/javascript" src="E:/학교/HTML5와 웹비즈니스 모델/Code/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var selector = "h"+1+ ", h"+2; // var: 변수 선언 명령어
+        var attribute = "color";
+        var value = "green";
+        $(selector).css(attribute, value);
+      });
+      </script>
+  </head>
+  <body>
+    <h1>HELLO, jQuery1</h1>
+    <h2>HELLO, jQuery2</h2>
+    <h1>HELLO, jQuery3</h1>
+    <h2>HELLO, jQuery4</h2>
+  </body>
+</html>
