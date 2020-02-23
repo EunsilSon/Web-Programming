@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>속성 선택자</title>
+    <script type="text/javascript" src="E:/학교/HTML5와 웹비즈니스 모델/Code/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('input[type="text"]').css("background-color", "red"); // input태그의 타입이 text일 때, 배경 색상을 빨간색으로 하라
+        // (작은 따옴표) ' input [type = (큰 따옴표) "text" ] ' )
+      });
+      </script>
+  </head>
+  <body>
+    <input type="text"/><br/>
+    <input type="password"/><br/>
+  </body>
+</html>
