@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>자손, 후손 선택자</title>
+    <script type="text/javascript" src="E:/학교/HTML5와 웹비즈니스 모델/Code/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("div > *").css("color", "red"); // 자손
+        $("div *").css("color", "red"); // 후손
+      });
+      </script>
+  </head>
+  <body>
+    <div>
+    <ul>
+      <li>사과</li>
+      <li>수박</li>
+      <li>딸기</li>
+    </ul>
+    <ul>
+      <li>사과</li>
+      <li>수박</li>
+      <li>딸기</li>
+    </ul>
+    </div>
+  </body>
+</html>
