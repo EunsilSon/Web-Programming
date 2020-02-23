@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>제이쿼리(jQuery): attr()</title>
+    <!--attr: 태그안에 부가적으로 쓰는 src="" alt="" title="" 등의 값을 변경해주는 기능-->
+  </head>
+  <body>
+    <a href="#" title="이미지" id="attr" class="attr">제이쿼리(jQuery): attr( )</a>
+    <ul>
+      <li>href 값: <span class="c1">0</span></li>
+      <li>title 값: <span class="c2">0</span></li>
+      <li>id 값: <span class="c3">0</span></li>
+      <li>class 값: <span class="c4">0</span></li>
+    </ul>
+    <script type="text/javascript" src="E:/학교/HTML5와 웹비즈니스 모델/Code/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    var href = $("#attr").attr("href");
+    var title = $("#attr").attr("title");
+    var id = $("#attr").attr("id");
+    var cl = $("#attr").attr("class");
+    $(".c1").text(href);
+    $(".c2").text(title);
+    $(".c3").text(id);
+    $(".c4").text(cl);
+    </script>
+  </body>
+</html>

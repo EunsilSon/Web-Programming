@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>제이쿼리(jQuery): attr()</title>
+  </head>
+  <body>
+    <img class="img2" src="E:/학교/HTML5와 웹비즈니스 모델/Code/img/dog.jpg" alt="이미지" width="100" height="100">
+    <img class="img2" src="E:/학교/HTML5와 웹비즈니스 모델/Code/img/dog.jpg" alt="이미지" width="100" height="100">
+    <img class="img2" src="E:/학교/HTML5와 웹비즈니스 모델/Code/img/dog.jpg" alt="이미지" width="100" height="100">
+    <img class="img2" src="E:/학교/HTML5와 웹비즈니스 모델/Code/img/dog.jpg" alt="이미지" width="100" height="100">
+    <img class="img2" src="E:/학교/HTML5와 웹비즈니스 모델/Code/img/dog.jpg" alt="이미지" width="100" height="100">
+    <br><br>
+    <script type="text/javascript" src="E:/학교/HTML5와 웹비즈니스 모델/Code/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      $(".img2").attr({width: function(i){return (i + 1) * 50;} , height: function(j){return (j + 1) * 50;}});
+    </script>
+  </body>
+</html>
