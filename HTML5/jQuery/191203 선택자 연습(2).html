@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery 선택자 연습(2)</title>
+    <script type="text/javascript" src="E:/학교/HTML5와 웹비즈니스 모델/Code/js/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+    <h1>뉴스</h1>
+    <div id="breaking-news">
+      <h3>속보</h3>
+    <ul id="breaking-new-box">
+      <li>혈세 8천억 지원 받아놓고... 560명 해고 '날벼락'</li>
+      <li>말꼬리 흐리는日... "사과 여부가 중요한 게 아니라"</li>
+      <li>죽음의 5중주 '대사증후군', 칼슘으로 막는다</li>
+    </ul>
+    </div>
+    <div id="news-box">
+      <h3>주요 뉴스</h3>
+      <div id="box">
+        <h3>스포츠 뉴스</h3>
+        <ul id="sport-box">
+          <li>'박정아 23점' 도로공사, 흥국생명 꺾고 첫 연승.. 4위 도약</li>
+          <li>박항서 감독 "베트남 잘해 행복... 더 좋은 활약 보여줄 것"</li>
+          <li>3시간 넘게 펼쳐진 남북 여자탁구 대결... 관중들 박수 갈채</li>
+        </ul>
+      </div>
+      <div>
+        <h3>연예 뉴스</h3>
+        <ul id="ent-box">
+          <li>'미스트롯' 선 정미애, 호흡곤란 응급실행</li>
+          <li>'VIP' 이상윤 내, 곽선영 아닌 표예진?...'충격+반전'</li>
+          <li>'요즘책방' 윤소희 "카이스트 생명화학공학 전공, 과학서적 즐겨 읽어"</li>
+        </ul>
+      </div>
+    </div>
+    <div id="movie-box">
+      <h3>영화 정보</h3>
+      <div class="box">
+        <h3>개봉 영화</h3>
+        <ul id="ranking-box">
+          <li>1위. 겨울왕국</li>
+          <li>2위. 블랙머니</li>
+          <li>3위. 신의한수:귀,,</li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $("#breaking-new-box li").css("color","red");
+      $("#news-box h3").css("color","blue");
+      $("#news-box > h3").css("text-decoration","underline");
+      $("#news-box > h3 + div").css("border","3px solid red");
+      $("#news-box div").css("background-color","yellow");
+      $("#news-box .box").css("background-color","yellow");
+      $("#news-box > h3 ~ div").css("background-color","pink");
+      $("#news-box > h3 ~ .box").css("background-color","yellow");
+    </script>
+  </body>
+  </html>
